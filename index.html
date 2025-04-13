@@ -181,7 +181,7 @@ function checkCollisions() {
 function endGame() {
   if (gameOver) return;
   gameOver = true;
-  set(ref(db, `rooms/${roomId}/players/${playerId}/gameOver`), true);
+  set(ref(db, `rooms/1v1v1/${roomId}/players/${playerId}/gameOver`), true);
   document.getElementById('retryBtn').style.display = 'block';
   stopAllIntervals();
 }
